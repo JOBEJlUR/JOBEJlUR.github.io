@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> ARMANO † HOLDING</title>
+		<link rel="icon" type="image/ico" href="iconlogo.ico" sizes="45x45">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body oncontextmenu="return " oncopy="return ;" oncontextmenu="return " onselectstart="return ;">
+	<div id="page-preloader" class="preloader">
+		<div id="load">
+		  <div>U</div>
+		  <div>O</div>
+		  <div>Y</div>
+		  <div> </div>
+		  <div>D</div>
+		  <div>A</div>
+		  <div>E</div>
+		  <div>D</div>
+		</div>
+	</div>
+		<video autoplay="1" loop="" id="player">
+			<source src="video/2.mp4" type="video/mp4">
+		</video>
+		<div id="overlay"> <img src="images/black.png" align="right" id="black"></div>
+		<div id="main">
+            
+			<header id="header">
+                <h1> ARM&nbsp; ANO</h1>
+                <h2> HOLDING </h2>
+                <h3> T </h3>
+				
+			</header>
+            <a href="https://www.youtube.com/channel/UCsyBVa0eTR-lL0sRnKpIe8w"><img src="images/ghoste.png" id="ghostelogo"></a>
+            <img src="images/star.png" id="star">
+            <img src="images/dead.png" id="deadlist">
+			<div class="text"></div>
+			
+            
+            <ul class="social-menu">
+                <li><a class="vk" href="https://vk.com/yurnero322"><i class="fa fa-vk"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/watch?v=mFs_UIYGtI0"><i class="fa fa-youtube"></i></a></li>
+                <li><a class="steam" href="http://steamcommunity.com/id/sluggwave/"><i class="fa fa-steam-square"></i></a></li>
+                <li><a class="circle" href="https://osu.ppy.sh/users/7969922"><i class="fa fa-circle"></i></a></li>
+            </ul>
+        </div>
+        <script  src="js/index.js"></script>
+		<script>
+	window.onload = function() {
+		setTimeout(function(){
+			document.getElementById('page-preloader').style.display='none';
+		}, 4000);
+	};
+</script>
+	</body>	
+	<!-- TITLE -->
+		<script> 
+	var tit = document.title; 
+	var c = 0; 
+	function writetitle() { 
+	document.title = tit.substring(0,c);//osw 
+	if(c==tit.length) { 
+	c = 0;setTimeout("writetitle()", 3000) 
+	} else { 
+	c++; 
+	setTimeout("writetitle()", 200) 
+	} 
+	} 
+	writetitle() 
+    </script>
+	<!-- ANOTHER SCRIPTS -->
+		<script> 
+    document.onkeydown = function(e) { 
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
+    } 
+    return false; 
+    }; 
+        </script>
+
+		<script> 
+    function click() { 
+    if (event.button==2||event.button==3) { 
+    oncontextmenu='return false'; 
+    } 
+    } 
+    document.onmousedown=click 
+    document.oncontextmenu = new Function("return false;") 
+        </script>
+	
+	<script>
+    document.ondragstart = noselect; 
+    // запрет на перетаскивание 
+    document.onselectstart = noselect; 
+    // запрет на выделение элементов страницы 
+    document.oncontextmenu = noselect; 
+    // запрет на выведение контекстного меню 
+    function noselect() {return false;} 
+</script>
+
+</html>
