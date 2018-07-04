@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title> ARMANO † HOLDING </title>
+		<title> ARMANO † HOLDING</title>
 		<link rel="icon" type="image/ico" href="iconlogo.ico" sizes="45x45">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="css/style.css">
@@ -23,12 +23,14 @@
 		  <div>D</div>
 		</div>
 	</div>
-		<video autoplay muted loop="" id="player">
+		 <div class="youtube-wrapper">
+            <audio loop>
+                <source src="video/1.mp4" />
+            </audio>
+            <video autoplay muted loop="" id="player">
 			<source src="video/2.mp4" type="video/mp4">
-		</video>
-		<script>
-    		document.getElementById('player').play();
-		</script>
+			 </video>      
+        </div>
 		<div id="overlay"> <img src="images/black.png" align="right" id="black"></div>
 		<div id="main">
             
@@ -42,6 +44,13 @@
             <img src="images/star.png" id="star">
             <img src="images/dead.png" id="deadlist">
 			<div class="text"></div>
+			<div class="youtube-controls">
+            <ul>
+                <li class="pause"><img src="images/pause.png" /></li>
+                <li class="volume"><img src="images/volume_off.png" /></li>
+                <li><input type="range" name="volume" value="0.05" step="0.05" max="1" min="0" /></li>
+            </ul>
+        </div>
 			
             
             <ul class="social-menu">
@@ -59,6 +68,8 @@
 		}, 4000);
 	};
 </script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 	</body>	
 	<!-- TITLE -->
 		<script> 
