@@ -27,7 +27,7 @@
         cursor: url(cursor.png), pointer;
         height: 100%;
 		width: 100%;
-		animation: main 1s 30s forwards;
+		animation: main 1s 10s forwards;
 		backface-visibility: hidden;		
 		transform: translate3d(0,0,0);
 		opacity: 0;
@@ -47,7 +47,7 @@
         transition: 1s opacity;
 		}
 	#overlay {
-		animation: overlay 0.1s 30s forwards;
+		animation: overlay 0.1s 10s forwards;
 		background-attachment: fixed, fixed;		
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
